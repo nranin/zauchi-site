@@ -672,26 +672,16 @@
       .steps { gap: 24px; }
       .step:not(:last-child)::after { display: none; }
 
-      /* Картинки в feature-секциях — растягиваем на всю ширину */
-      .quiz-section-img {
-        width: 100%;
-        max-width: 560px;
-        margin: 0 auto;
-        display: block;
-      }
-      .dict-phones-img {
-        height: auto;
-        width: 100%;
-        max-width: 480px;
-        margin: 0 auto;
-        display: block;
-      }
+      /* Картинки в feature-секциях — единый размер */
+      .quiz-section-img,
+      .dict-phones-img,
       .teacher-section-img {
-        height: auto;
         width: 100%;
+        height: auto;
         max-width: 480px;
         margin: 0 auto;
         display: block;
+        border-radius: 16px;
       }
       /* dual-phones (словарь) */
       .dual-phones {
@@ -713,8 +703,8 @@
       .feature, .feature.reverse { padding: 48px 16px; gap: 36px; }
       .for-whom { padding: 48px 16px; }
       .section-sub { font-size: 15px; }
-      .quiz-section-img { max-width: 100%; }
-      .dict-phones-img { max-width: 100%; }
+      .quiz-section-img,
+      .dict-phones-img,
       .teacher-section-img { max-width: 100%; }
       .final-cta { padding: 64px 16px; }
       .final-cta .chinese-big { font-size: 64px; letter-spacing: 12px; }
